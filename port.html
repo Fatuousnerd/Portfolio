@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Portfolio</title>
+    <link rel="icon" href="kalipic.jpg"/><link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 <body>
     <!--Loader-->
@@ -38,6 +42,7 @@
             <h3>PORTFOLIO</h3>
             <ul>
                 <li id="home" ><a href="index.html">HOME</a></li>
+                <li id="tables" ><a href="#">TABLE</a></li>
             </ul>
         </nav>
         <div class="detel">
@@ -63,16 +68,48 @@
             <tr id="rows">
                 <td>2.</td>
                 <td><a href="https://fatuousnerd.github.io/imgsearch.github.io" target="_blank">Image Search</a></td>
-                <td>erbrssrw</td>
+                <td>Search for various images.</td>
             </tr>
             <tr id="rows">
                 <td>3.</td>
                 <td><a href="https://fatuousnerd.github.io/filedownload" target="_blank">Link Downloader</a></td>
-                <td>erbrssrw</td>
+                <td>Download from almost any link.<i style="color: orange;"> Currently it may have challenges due to Google's CORS policy.</i></td>
+            </tr>
+            <tr id="rows">
+                <td>4.</td>
+                <td><a href="https://fatuousnerd.github.io/qrcodegen" target="_blank">QR Code Generator</a></td>
+                <td>Generate QR Codes easily from texts/URLs.</td>
+            </tr>
+            <tr id="rows">
+                <td>5.</td>
+                <td><a href="https://fatuousnerd.github.io/qrcodereader" target="_blank">QR Code Reader</a></td>
+                <td>Read Qr Codes from your computer files.</td>
+            </tr>
+            <tr id="rows">
+                <td>6.</td>
+                <td><a href="https://fatuousnerd.github.io/Quiz-App" target="_blank">Quiz App</a></td>
+                <td>Challenge your mind with some questions to gauge your general knowledge.</td>
             </tr>
         </table>
     </div>
 
-    <script src="script.js"></script>
+     <!--Footer-->
+     <footer>
+        <p>Fatuous Nerd</p>
+        <p>Let Me Get You A Beautiful Website.</p>
+        <div class="social">
+            <a href="https://github.com/Fatuousnerd" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/fatuous.nerd_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Fatuous_nerd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p class="end">Copyright</p>
+    </footer>
+
+    <!--Back to top-->
+    <div id="scroller">
+        <i class="fa-solid fa-circle-up"></i>
+    </div>
+
+    <script src="port.js"></script>
 </body>
 </html>

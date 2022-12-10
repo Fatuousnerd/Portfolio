@@ -6,7 +6,8 @@ port = document.getElementById("port"),
 contain = document.querySelector(".contain"),
 abouts = document.querySelector(".about"),
 scroller = document.getElementById("scroller"),
-anim = document.getElementById("anim");
+anim = document.getElementById("anim"),
+tables = document.getElementById("tables");
 
 window.addEventListener('load', () => {
     contain.style.display = 'none'
