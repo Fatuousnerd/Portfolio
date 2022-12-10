@@ -4,7 +4,9 @@ services = document.getElementById("services"),
 about = document.getElementById("about"),
 port = document.getElementById("port"),
 contain = document.querySelector(".contain"),
-abouts = document.querySelector(".about")
+abouts = document.querySelector(".about"),
+scroller = document.getElementById("scroller"),
+anim = document.getElementById("anim");
 
 window.addEventListener('load', () => {
     contain.style.display = 'none'
@@ -37,3 +39,20 @@ home.addEventListener('click', () => {
         behavior: 'smooth'
       });
 });
+
+window.addEventListener('scroll', () => {
+    //
+    if(window.screenTop = "1000px"){
+        scroller.style.display = "block"
+    } else{
+        scroller.style.display = "none"
+    }
+    scroller.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+});
+
+
