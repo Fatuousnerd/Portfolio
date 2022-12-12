@@ -29,4 +29,11 @@ window.addEventListener('scroll', () => {
     })
 });
 
+function shownot(){
+    if(Notification.permission != "granted"){
+        Notification.requestPermission()
+    }
+}
+
+shownot()
 
