@@ -7,7 +7,9 @@ contain = document.querySelector(".contain"),
 abouts = document.querySelector(".about"),
 scroller = document.getElementById("scroller"),
 anim = document.getElementById("anim"),
-tables = document.getElementById("tables");
+tables = document.getElementById("tables"),
+light = document.getElementById("light"),
+dark = document.getElementById("dark");
 
 window.addEventListener('load', () => {
     contain.style.display = 'none'
@@ -55,5 +57,11 @@ window.addEventListener('scroll', () => {
         })
     })
 });
-
+ 
+dark.onclick = () => {
+    while (dark.innerHTML == "dark_mode") {
+        dark.innerHTML == "light_mode"
+    }
+    
+};
 

@@ -84,7 +84,7 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #eff4fd;
+    background: #E8F6EF;
 }
 nav{
     display: flex;
@@ -132,6 +132,16 @@ nav h3:hover{
     color: #555;
     cursor: pointer;
 }
+#light{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+#dark{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+}
 .detel{
     margin-left: 8%;
     margin-top: 15%;
@@ -142,7 +152,7 @@ nav h3:hover{
     margin-bottom: 20px;
 }
 span{
-    color: orange;
+    color: #101010;
 }
 #anim{
     color: orange;
@@ -248,7 +258,7 @@ span{
 .about{
     width: 100%;
     padding: 100px 0;
-    background-color: #191919;
+    background-color: #B8DFD8;
 }
 .about img{
     height: auto;
@@ -287,14 +297,14 @@ span{
     text-transform: capitalize;
 }
 .about-text p{
-    color: #fcfc;
+    color: #FFE194;
     letter-spacing: 1px;
     line-height: .2px;
     font-size: 18px;
     margin-bottom: 45px;
 }
 .about-text a{
-    background-color: orange;
+    background-color: #101010;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -305,11 +315,11 @@ span{
 }
 .about-text a:hover{
     background-color: transparent;
-    border: 2px solid orange;
+    border: 2px solid #101010;
     cursor: pointer;
 }
 .service{
-    background: #101010;
+    background: #59C1BD;
     width: 100%;
     padding: 100px 0px;
 }
@@ -329,7 +339,7 @@ span{
     height: 465px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: #81C6E8;
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -340,7 +350,7 @@ span{
     display: block;
     text-align: center;
     margin: 25px 0;
-    color: orange;
+    color: #101010;
 }
 h5{
     color: white;
@@ -348,13 +358,13 @@ h5{
     margin-bottom: 15px;
 }
 .pra p{
-    color: #fcfc;
+    color: #FFE194;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
 .card .button{
-    background-color: orange;
+    background-color: #101010;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -365,13 +375,13 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid orange;
+    border: 2px solid #101010;
     cursor: pointer;
 }
 .contact-me{
     width: 100%;
     height: 290px;
-    background: #191919;
+    background: #B8DFD8;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -384,7 +394,7 @@ h5{
     margin-bottom: 25px;
 }
 .contact-me .button-two{
-    background-color: orange;
+    background-color: #101010;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -395,14 +405,14 @@ h5{
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid orange;
+    border: 2px solid #101010;
     cursor: pointer;
 }
 footer{
     position: relative;
     width: 100%;
     height: 400px;
-    background: #101010;
+    background: #81C6E8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -430,7 +440,7 @@ footer p:nth-child(2){
     align-items: center;
     justify-content: center;
     display: flex;
-    background: orange;
+    background: #101010;
     border-radius: 50%;
     margin: 22px 10px;
     color: white;
@@ -443,7 +453,7 @@ footer p:nth-child(2){
 }
 .end{
     position: absolute;
-    color: orange;
+    color: #101010;
     bottom: 35px;
     font-size: 14px;
 }
@@ -451,7 +461,7 @@ footer p:nth-child(2){
     position: fixed;
     top: 90vh;
     left: 94vw;
-    color: orange;
+    color: #fff;
     font-size: 50px;
 }
 .fa-circle-up:hover{
@@ -474,7 +484,7 @@ footer p:nth-child(2){
     content: "";
     height: 2px;
     width: 0;
-    background: orange;
+    background: #fff;
     display: block;
     transition: .7s ease-in-out;
 }
