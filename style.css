@@ -44,6 +44,7 @@ body{
         opacity: 1;
     }
     76%{
+        background: transparent;
         opacity: 0;
     }
     100%{
@@ -151,10 +152,10 @@ nav h3:hover{
     color: #212121;
     margin-bottom: 20px;
 }
-span{
-    color: #101010;
-}
 #anim{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: 'Unbounded', cursive;
     color: orange;
 }
 .detel #anim{
@@ -168,16 +169,13 @@ span{
     height: 100%;
     width: 100%;
     border-left: 2px solid orange;
-    animation: typing 1.5s steps(5) infinite;
+    animation: typing 2s steps(5) infinite;
 }
 @keyframes typing {
     to{
         left: 110%;
         margin: 0 -35px 0 35px;
     }
-}
-.detel span:hover{
-    animation-play-state: paused !important;
 }
 .detel p{
     color: #555;
@@ -193,40 +191,6 @@ span{
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
-}
-.detel .neon{
-    text-shadow: 0 0 5px #fff,
-    0 0 5px orange,
-    0 0 10px orange,
-    0 0 15px orange,
-    0 0 30px orange,
-    0 0 60px orange,
-    0 0 70px orange;
-    color: darkorange;
-    font-size: 3.4em;
-    letter-spacing: 1px;
-}
-.neon span{
-    animation: flicker 15.5s linear infinite;
-}
-.neon .delay1{
-    animation-delay: 0.8s;
-} 
-.neon .delay2{
-    animation-delay: 1.4s;
-} 
-.neon .delay3{
-    animation-delay: 1.8s;
-} 
-@keyframes flicker {
-    0%{ opacity: 0;}
-    10%{ opacity: 1;}
-    20%{ opacity: 0;}
-    40%{ opacity: 1;}
-    50%{ opacity: 0;}
-    60%{ opacity: 1;}
-    80%{ opacity: 0;}
-    100%{ opacity: 1;}
 }
 .images{
     width: 45%;
@@ -272,6 +236,10 @@ span{
 .about-text{
     width: 550px;
 }
+.about-text span{
+    font-size: 1.5rem;
+    color: #FFE194;
+}
 .about-text button a{
     width: 100%;
 }
@@ -297,7 +265,7 @@ span{
     text-transform: capitalize;
 }
 .about-text p{
-    color: #FFE194;
+    color: #9b7f3aa6;
     letter-spacing: 1px;
     line-height: .2px;
     font-size: 18px;
@@ -498,7 +466,7 @@ footer p:nth-child(2){
 .tables h5:hover{
     transform: translateY(15%);
     transition: transform 1s, text-decoration 1s;
-    color: #555;
+    color: #FFE194;
     cursor: pointer;
 }
 .tables table{
@@ -533,3 +501,81 @@ table a{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.line {
+    width: 100vw;
+}
+.left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+}
+.left {
+    color: orange;
+    transform: skew(0deg, -15deg);
+}
+.right {
+    color: black;
+    transform: skew(0deg, 15deg);
+}
+.left .content {
+    width: 100vw;
+    text-align: center;
+}
+.right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+}
+span {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+}
+.tooltip {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: relative;
+    margin: 15px;
+    text-align: center;
+}  
+.tooltip::after {
+    background-color: #333;
+    border-radius: 10px;
+    color: orange;
+    display: none;
+    padding: 10px 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+}  
+.tooltip::before {
+    background-color: #333;
+    content: ' ';
+    display: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+}  
+.tooltip:hover::after {
+    display: block;
+}  
+.tooltip:hover::before {
+    display: block;
+}  
+.tooltip.top::after {
+    content: attr(data-ct);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 10px));
+}  
+.tooltip.top::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
+  
