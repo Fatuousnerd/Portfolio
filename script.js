@@ -7,9 +7,8 @@ contain = document.querySelector(".contain"),
 abouts = document.querySelector(".about"),
 scroller = document.getElementById("scroller"),
 anim = document.getElementById("anim"),
-tables = document.getElementById("tables"),
-light = document.getElementById("light"),
-dark = document.getElementById("dark");
+theme = document.getElementById("theme"),
+tables = document.getElementById("tables");
 
 window.addEventListener('load', () => {
     contain.style.display = 'none'
@@ -36,13 +35,6 @@ hire.addEventListener('click', () => {
       });
 });
 
-home.addEventListener('click', () => {
-    window.scrollBy({
-        top: 0,
-        behavior: 'smooth'
-      });
-});
-
 window.addEventListener('scroll', () => {
     //
     if(window.screenTop = "1000px"){
@@ -57,11 +49,19 @@ window.addEventListener('scroll', () => {
         })
     })
 });
- 
-dark.onclick = () => {
-    while (dark.innerHTML == "dark_mode") {
-        dark.innerHTML == "light_mode"
-    }
-    
-};
 
+function edtheme(){
+    console.warn(theme.innerHTML)
+    if(theme.innerHTML = "light_mode"){
+        theme.innerHTML = "dark_mode"
+        console.error(theme.innerHTML)
+    }
+    if(theme.innerHTML == "light_mode"){
+        theme.innerHTML = "mode_night"
+        console.log(theme.innerHTML)
+    }
+}
+ 
+theme.addEventListener('click', () => {
+    edtheme()
+});

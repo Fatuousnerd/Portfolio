@@ -7,6 +7,7 @@
 }
 body{
     background: #000;
+    cursor: context-menu;
 }
 .contain{
     display: flex;
@@ -208,6 +209,9 @@ nav h3:hover{
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
     border-radius: 05px;
+}
+.shape{
+    box-shadow: 0 0.4rem .4rem 0 #000;
 }
 .images:hover .shape{
     bottom: 40px;
@@ -572,10 +576,13 @@ span {
     top: 0;
     left: 50%;
     transform: translate(-50%, calc(-100% - 10px));
+    text-transform: lowercase;
 }  
 .tooltip.top::before {
     top: 0;
     left: 50%;
     transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
 }
-  
+ #theme{
+    cursor: pointer;
+ } 
