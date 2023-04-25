@@ -194,7 +194,7 @@ nav h3:hover{
     border-radius: 5px;
 }
 .images{
-    width: 45%;
+    width: 75%;
     height: 80%;
     position: absolute;
     bottom: 0;
@@ -217,7 +217,7 @@ nav h3:hover{
     bottom: 40px;
 }
 .images .pic{
-    width: 200px;
+    width: 90%;
     height: 300px;
 }
 .images:hover .pic{
