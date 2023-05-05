@@ -57,3 +57,43 @@
     transform: translate(-22px,5px) skew(21deg); 
   }
 }
+
+
+<h6>Note: Some pages might still be under construction.</h6>
+        <table>
+            <tr id="headers">
+               <th>No.</th>
+                <th>Webpages</th>
+                <th>Description</th>
+            </tr>
+            <tr id="rows">
+                <td>1.</td>
+                <td><a href="https://fatuousnerd.github.io" class="tooltip top" data-ct="https://fatuousnerd.github.io" target="_blank">Weather Site</a></td>
+                <td>Nerocast gives current weather status on any town/city depending on your search and the background picture is from the given place.</td>
+            </tr>
+            <tr id="rows">
+                <td>2.</td>
+                <td><a href="https://fatuousnerd.github.io/imgsearch.github.io" class="tooltip top" data-ct="https://fatuousnerd.github.io/imgsearch.github.io" target="_blank">Image Search</a></td>
+                <td>Search for images using an image search engine.</td>
+            </tr>
+            <tr id="rows">
+                <td>3.</td>
+                <td><a href="https://fatuousnerd.github.io/filedownload" class="tooltip top" data-ct="https://fatuousnerd.github.io/filedownload" target="_blank">Link Downloader</a></td>
+                <td>Download from almost any link.<i style="color: orange;"> Currently has some issues due to Google's CORS policy.</i></td>
+            </tr>
+            <tr id="rows">
+                <td>4.</td>
+                <td><a href="https://fatuousnerd.github.io/qrcode" class="tooltip top" data-ct="https://fatuousnerd.github.io/qrcode" target="_blank">QR Code Generator/Reader</a></td>
+                <td>Generate/Read Qr Codes As Easy As It Can Be.</td>
+            </tr>
+            <!--<tr id="rows">
+                <td>5.</td>
+                <td><a class="tooltip top" data-ct="qweerty">QR Code Reader</a></td>
+                <td>Read Qr Codes from your computer files.</td>
+            </tr>-->
+            <tr id="rows">
+                <td>5.</td>
+                <td><a href="https://fatuousnerd.github.io/Quiz-App" class="tooltip top" data-ct="https://fatuousnerd.github.io/Quiz-App" target="_blank">Quiz App</a></td>
+                <td>Challenge your mind with some questions to gauge your general knowledge.</td>
+            </tr>
+        </table>
