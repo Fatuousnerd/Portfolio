@@ -1,4 +1,5 @@
-var contain = document.querySelector(".contain");
+var contain = document.querySelector(".contain"),
+notifs = document.getElementById("notifs");
 
 
 window.addEventListener('load', () => {
@@ -19,3 +20,11 @@ window.addEventListener('scroll', () => {
         })
     })
 });
+
+function closePopup() {
+    notifs.style.display = 'none';
+}
+
+function loginrefer(){
+    window.location.href = "signup.html"
+}
