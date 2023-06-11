@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('scroll', () => {
-    //
+    //Back To Top Scroller
     if(window.screenTop = "1000px"){
         scroller.style.display = "block"
     } else{
@@ -29,14 +29,15 @@ window.addEventListener('scroll', () => {
     })
 });
 
-function shownot(){
+/*function shownot(){
     if(Notification.permission != "granted"){
         Notification.requestPermission()
     }
 }
 
-shownot()
+shownot()*/
 
+//Get What You Want Animation
 window.addEventListener('mousemove', handleMouseMove);
 window.addEventListener('resize', handleWindowResize);
 
@@ -60,3 +61,4 @@ function handleMouseMove(e) {
 function handleWindowResize() {
   width = window.innerWidth;
 }
+//Animation End

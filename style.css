@@ -9,6 +9,7 @@ body{
     background: #000;
     cursor: context-menu;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .contain{
     display: flex;
@@ -452,6 +453,7 @@ footer p:nth-child(2){
     color: #eff4fd;
     justify-content: space-around;
     text-align: center;
+    padding-bottom: 10px;
 }
 .tables h5::after{
     content: "";
@@ -628,6 +630,9 @@ span {
     justify-content: space-between;
     align-content: space-between;
     border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .webs{
     background: rgba(255, 255, 255, 0.6);
@@ -650,7 +655,28 @@ span {
     background: orange;
     display: block;
 }
-.webs h6:hover{
+.pys h6:hover{
+    transform: translateY(15%);
+    transition: transform 1s, text-decoration 1s;
+    color: #FFE194;
+    cursor: pointer;
+}
+.pys h6::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: #fff;
+    display: block;
+    transition: .7s ease-in-out;
+}
+.pys h6:hover::after{
+    content: "";
+    height: 2.5px;
+    width: 100%;
+    background: orange;
+    display: block;
+}
+.pys h6:hover{
     transform: translateY(15%);
     transition: transform 1s, text-decoration 1s;
     color: #FFE194;
@@ -673,4 +699,141 @@ span {
 .cn a{
     text-decoration: none;
     color: #59c1be62;
+}
+.des{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: 5%;
+    border-radius: 5px;
+}
+.des h6{
+    font-size: larger;
+    margin-bottom: 10px;
+}
+.des h6::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    background: #fff;
+    display: block;
+    transition: .7s ease-in-out;
+}
+.des h6:hover::after{
+    content: "";
+    height: 2.5px;
+    width: 100%;
+    background: orange;
+    display: block;
+}
+.des h6:hover{
+    transform: translateY(15%);
+    transition: transform 1s, text-decoration 1s;
+    color: #FFE194;
+    cursor: pointer;
+}
+.notifs{
+    width: 100%;
+    height: 80px;
+    /*background: rgba(21, 30, 35, 0.7);*/
+    background: #59c1be62;
+    position: relative;
+    top: 0%;
+    z-index: 99;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    display: none;
+    transition: 1.5s display ease-out;
+}
+.notifs button{
+    background-color: #101010;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    transition: .4s;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.notifs button:hover{
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #101010;
+    cursor: pointer;
+}
+.arrowdn{
+    position: relative;
+}
+.arrowdn p{
+    position: relative;
+    top: 80vh;
+    left: 46vw;
+}
+.bcontent{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #B8DFD8; 
+}
+.fa-circle-down{
+    position: relative;
+    top: 50vh;
+    left: 49.5vw;
+    color: #fff;
+    font-size: 50px;
+    animation: hvr infinite 2s;
+}
+.fa-circle-down:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .5s;
+}
+@keyframes hvr{
+    0%{transform: translateY(-50%);}
+    /*25%{transform: translateY(-25%);}*/
+    50%{transform: translateY(0%);}
+    /*75%{transform: translateY(25%);}*/
+    100%{transform: translateY(50%);}
+}
+.arrowdn .detel{
+    position: relative;
+    top: 30vh;
+    left: 0vw;
+}
+.arrowdn .detel .line{
+    color: #9b7f3aa6;
+}
+.arrowdn .detel .left{
+    color: #9b7f3aa6;
+}
+.bcontent h2{
+    position: relative;
+    left: 45vw;
+}
+.bcontent p{
+    position: relative;
+    left: 48vw;
+}
+.sooner{
+    max-width: 70vw;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    position: relative;
+    left: 10vw;
+}
+.sooner h2{
+    position: relative;
+    left: 18vw;
+    color: orange;
+}
+.sooner p{
+    position: relative;
+    left: 5vw;
+    margin-top: 20px;
 }

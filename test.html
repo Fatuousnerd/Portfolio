@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="togglePopup()">Open Popup</button>
+
+<div id="popup" class="popup">
+  <span onclick="togglePopup()" class="close">x</span>
+  <h2>Popup Content</h2>
+  <p>This is the content of the popup.</p>
+</div>
+
+<style>
+    .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.3s, visibility 0s linear 1.3s;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Additional styling for demonstration purposes */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+    function togglePopup() {
+  const popup = document.getElementById('popup');
+  popup.classList.toggle('show');
+}
+
+</script>
+</body>
+</html>

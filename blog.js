@@ -1,39 +1,18 @@
-var home = document.getElementById("home"),
-hire = document.getElementById("hire"),
-services = document.getElementById("services"),
-about = document.getElementById("about"),
-port = document.getElementById("port"),
-contain = document.querySelector(".contain"),
-abouts = document.querySelector(".about"),
+var contain = document.querySelector(".contain"),
 scroller = document.getElementById("scroller"),
-anim = document.getElementById("anim"),
-theme = document.getElementById("theme"),
-tables = document.getElementById("tables");
+notifs = document.getElementById("notifs");
 
 window.addEventListener('load', () => {
     contain.style.display = 'none'
 });
 
-about.addEventListener('click', () => {
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
-      });
-});
+function closePopup() {
+    notifs.style.display = 'none';
+}
 
-services.addEventListener('click', () => {
-    window.scrollBy({
-        top: window.innerHeight * 2 + 100,
-        behavior: 'smooth'
-      });
-});
-
-hire.addEventListener('click', () => {
-    window.scrollBy({
-        top: window.innerHeight * 3,
-        behavior: 'smooth'
-      });
-});
+function loginrefer(){
+    window.location.href = "signup.html"
+}
 
 window.addEventListener('scroll', () => {
     //Back To Top Scroller
@@ -50,18 +29,6 @@ window.addEventListener('scroll', () => {
     })
 });
 
-function edtheme(){
-    console.warn(theme.innerHTML)
-    if(theme.innerHTML = "light_mode"){
-        theme.innerHTML = "dark_mode"
-        console.error(theme.innerHTML)
-    }
-    if(theme.innerHTML == "light_mode"){
-        theme.innerHTML = "mode_night"
-        console.log(theme.innerHTML)
-    }
-}
- 
 //Get What You Want Animation
 window.addEventListener('mousemove', handleMouseMove);
 window.addEventListener('resize', handleWindowResize);
